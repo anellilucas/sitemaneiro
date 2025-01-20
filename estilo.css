@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+
+.botao1caralho { 
+    font-size: 30px;
+    padding: 18px 17px 20px 18px;
+    color: blanchedalmond;
+    background: rgb(19, 19, 19);
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 50px;
+    width: 95px;
+    height: 95px;
+    transition: transform 0.1s;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.botao2ahan {
+    border-radius: 30px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: aqua;
+    height: 95px;
+    width: 95px;
+}
+
+
+button:active {
+    transform: scale(0.50); 
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img {
+    width: 300px; 
+    height: auto;
+}
+
+

@@ -20,21 +20,14 @@
     <p class="botao1caralho">Calalho</p>
 
     <script>
-        let timeoutId; // Para controlar o setTimeout
-
-    function playCaralho() {
-    // Play sound
-    const audio = document.getElementById("myAudio");
-    audio.currentTime = 0;
-    audio.play();
+function playCaralho() {
+    document.getElementById("myAudio").play();
 }
-    function playAhan() {  
-        const sound = document.getElementById('buttonSound');
-        sound.currentTime = 0; // Reset sound to start
-        sound.play();
-    }
 
-    </script>
+function playAhan() {
+    document.getElementById("buttonSound").play();
+}
+</script>
 </body>
 
 </html>

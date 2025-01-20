@@ -26,6 +26,10 @@ body {
     width: 95px;
 }
 
+.ditto {
+    width: 95px;
+    margin: -10px -10px -60px -10px; 
+}
 
 button:active {
     transform: scale(0.50); 

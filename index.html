@@ -12,22 +12,29 @@
 <body>
 
     <button class="botao1caralho" onclick="playCaralho()">?</button>
-    <audio id="myAudio" src="audio-caralho.wav"></audio>
+    <audio id="myAudio" src="C:\Galera\02_Site_Layouts\html-brinks\audio-caralho.wav"></audio>
 
     <button class="botao2ahan" onclick="playAhan()">Ãhãn</button>
-    <audio id="buttonSound" src="audio-ahan.wav"></audio>
+    <audio id="buttonSound" src="C:\Galera\02_Site_Layouts\html-brinks\audio-ahan.wav"></audio>
 
     <p class="botao1caralho">Calalho</p>
 
     <script>
-function playCaralho() {
-    document.getElementById("myAudio").play();
-}
+        let timeoutId; // Para controlar o setTimeout
 
-function playAhan() {
-    document.getElementById("buttonSound").play();
+    function playCaralho() {
+    // Play sound
+    const audio = document.getElementById("myAudio");
+    audio.currentTime = 0;
+    audio.play();
 }
-</script>
+    function playAhan() {  
+        const sound = document.getElementById('buttonSound');
+        sound.currentTime = 0; // Reset sound to start
+        sound.play();
+    }
+
+    </script>
 </body>
 
 </html>

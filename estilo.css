@@ -26,6 +26,14 @@ body {
     width: 95px;
 }
 
+.bunda {
+    padding: 10px;
+    width: 100px;
+    margin: -55px -10px -45px -10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
 .ditto {
     width: 95px;
     margin: -10px -10px -60px -10px; 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="estilo.css"/>
+
+
+
+</head>
+
+
+<body>
+    <button class="botao2ahan" onclick="playAhan()">Ãhãn</button>
+    <audio id="buttonSound" src="audio-ahan.wav"></audio>
+
+    <button class="botao1caralho" onclick="playCaralho()">?</button>
+    <audio id="myAudio" src="audio-caralho.wav"></audio>
+
+    <button onclick="playDitto()"><img class="ditto" src="ditto.png"></button>
+    <audio id="ditto" src="ditto.wav"></audio>
+
+    <script>
+    function playCaralho() {
+    document.getElementById("myAudio").play();
+}
+
+    function playAhan() {
+    document.getElementById("buttonSound").play();
+}
+
+    function playDitto() {
+    document.getElementById("ditto").play();
+}
+
+
+    </script>
+</body>
+
+</html>

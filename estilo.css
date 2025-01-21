@@ -3,8 +3,8 @@ body {
 }
 
 p {
-   color: white; 
-}
+    color: white; 
+ }
 
 .botao1caralho { 
     font-size: 30px;
@@ -41,14 +41,11 @@ p {
 .ditto {
     width: 95px;
     margin: -10px -10px -60px -10px; 
+    background-color: transparent;
 }
 
 button:active {
     transform: scale(0.50); 
-}
-
-.hidden {
-    display: none;
 }
 
 .container {
@@ -57,9 +54,12 @@ button:active {
     gap: 20px;
 }
 
-img {
-    width: 300px; 
-    height: auto;
-}
+.btn-wrapper {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+   }
+
+
 
 

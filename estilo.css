@@ -2,6 +2,10 @@ body {
     background-color: black;
 }
 
+p {
+   color: white; 
+}
+
 .botao1caralho { 
     font-size: 30px;
     padding: 18px 17px 20px 18px;

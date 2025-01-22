@@ -6,6 +6,26 @@ p {
     color: white; 
  }
 
+h1 {
+    color:white;
+}
+
+input {
+    size: 10;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .correct {
+    color: green;
+  }
+  .wrong {
+    color: red;
+  }
+
+
 .botao1caralho { 
     font-size: 30px;
     padding: 18px 17px 20px 18px;
@@ -21,6 +41,15 @@ p {
     border: none;
 }
 
+.marcelao {
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgb(48, 243, 14), rgb(1, 165, 64));
+    height: 55px;
+    width: 95px;
+}
+
 .botao2ahan {
     border-radius: 30px;
     font-size: 30px;
@@ -28,6 +57,11 @@ p {
     background-color: aqua;
     height: 95px;
     width: 95px;
+}
+
+.vertical{
+    width: 80px;
+    margin: -20px;
 }
 
 .bunda {
@@ -56,8 +90,9 @@ button:active {
 
 .btn-wrapper {
     display: inline-block;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
    }
 
 

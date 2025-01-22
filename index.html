@@ -4,13 +4,12 @@
 <head>
 <link rel="stylesheet" href="estilo.css"/>
 
-
-
 </head>
-
 
 <body>
     
+    <h1>De quem pertence essas vozes?</h1>
+
     <div class="btn-wrapper" onclick="playAudio('myAudio')">
         <button class="botao1caralho">?</button>
     </div>
@@ -27,6 +26,10 @@
         <button><img class="bunda" src="caneca-mauricio.png"></button>
     </div>
 
+    <div class="btn-wrapper" onclick="playAudio('queisso')">
+        <button class="marcelao">Birigüi</button>
+    </div>
+
     <div class="btn-wrapper" onclick="playAudio('rick2')">
         <button><img class="bunda" src="parmegiana-rick.jpg"></button>
     </div>
@@ -34,6 +37,14 @@
     <div class="btn-wrapper" onclick="playAudio('david1')">
         <button><img class="bunda" src="david-imagem.png"></button>
     </div>    
+
+    <div class="btn-wrapper" onclick="playAudio('marcel')">
+        <button><img class="vertical" src="ironmaiden.jpg"></button>
+    </div>
+
+    <div class="btn-wrapper" onclick="playAudio('bichona')">
+        <button><img class="bunda" src="motao.png"></button>
+    </div>
     
     <audio id="myAudio" src="audio-caralho.wav"></audio>
     <audio id="buttonSound" src="audio-ahan.wav"></audio>
@@ -41,12 +52,33 @@
     <audio id="mauaudio" src="audio-mauricio.wav"></audio>
     <audio id="rick2" src="audio-rick.wav"></audio>
     <audio id="david1" src="airbnb-audio.wav"></audio>
+    <audio id="marcel" src="audio-marcel.mp3"></audio>
+    <audio id="queisso" src="audio-queisso.mp3"></audio>
+    <audio id="bichona" src="audio-bichona.ogg"></audio>
 
     <script>
 
     function playAudio(audio) {
         document.getElementById(audio).play();
     }    
+
+    document.getElementById('nameInput').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                verifyAnswer();
+            }
+        });
+
+        function verifyAnswer() {
+            const inputValue = document.getElementById('nameInput').value;
+            const correctAnswer = "lucas";
+            const result = document.getElementById('result');
+
+            if (inputValue.toLowerCase() === correctAnswer.toLowerCase()) {
+                result.textContent = "Boa!";
+            } else {
+                result.textContent = "Errou trouxa!";
+            }
+        }
 
     </script>
 </body>
